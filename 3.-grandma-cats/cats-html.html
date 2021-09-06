@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Cats</title>
+  <link rel="stylesheet" href="cats-styles.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Jost&family=Marmelad&family=Prosto+One&display=swap" rel="stylesheet">
+</head>
+<body>
+<header>
+    Бабуленькины котятки
+</header>
+<main>
+  <input type="radio" id="select-all" name="select" checked>
+  <input type="radio" id="select-abys" name="select">
+  <input type="radio" id="select-brit" name="select">
+  <input type="radio" id="select-rusblue" name="select">
+  <input type="radio" id="select-siam" name="select">
+  <div class="types">
+    <label for="select-all" class="label-all">Все</label>
+    <label for="select-abys" class="label-abys">Абиссинская</label>
+    <label for="select-brit" class="label-brit">Британская</label>
+    <label for="select-rusblue" class="label-rusblue">Русская голубая</label>
+    <label for="select-siam" class="label-siam">Сиамская</label>
+    <div class="break"></div>
+  </div>
+  <div class="cards">
+    <div class="card brit">
+      <img src="img/brit-1.png" alt="brit-1">
+      <div class="desc">
+        Гоша, 4 года
+      </div>
+    </div>
+    <div class="card abys">
+      <img src="img/abys-1.png" alt="abys-1">
+      <div class="desc">
+        Барсик, 1 год
+      </div>
+    </div>
+    <div class="card brit">
+      <img src="img/brit-2.png" alt="brit-2">
+      <div class="desc">
+        Белла, 2 года
+      </div>
+    </div>
+    <div class="card rusblue">
+      <img src="img/rusblue-1.jpeg" alt="rusblue-1">
+      <div class="desc">
+        Гоша, 4 года
+      </div>
+    </div>
+    <div class="card siam">
+      <img src="img/siam-1.png" alt="siam-1">
+      <div class="desc">
+        Белла, 2 года
+      </div>
+    </div>
+    <div class="card abys">
+      <img src="img/abys-1.png" alt="abys-2">
+      <div class="desc">
+        Барсик, 1 год
+      </div>
+    </div>
+    <div class="card rusblue">
+      <img src="img/rusblue-1.jpeg" alt="rusblue-2">
+      <div class="desc">
+        Гоша, 4 года
+      </div>
+    </div>
+    <div class="card siam">
+      <img src="img/siam-2.png" alt="siam-2">
+      <div class="desc">
+        Биба и боба, 2 месяца
+      </div>
+    </div>
+  </div>
+  <div class="ratings">
+    <h2>Рейтинг</h2><br>
+    <input type="checkbox" id="descend" value="По убыванию" name="descend">По убыванию<br>
+    <div class="rating-abys">
+      Абиссинская<br>
+      <span class="scale scale-abys"></span>
+      <span class="score">9</span>
+    </div>
+    <div class="rating-brit">
+      Британская<br>
+      <span class="scale scale-brit"></span>
+      <span class="score">8</span>
+    </div>
+    <div class="rating-rusblue">
+      Русская голубая<br>
+      <span class="scale scale-rusblue"></span>
+      <span class="score">10</span>
+    </div>
+    <div class="rating-siam">
+      Сиамская<br>
+      <span class="scale scale-siam"></span>
+      <span class="score">4</span>
+    </div>
+  </div>
+</main>
+<footer>
+  <div class="company">
+    <div class="company-name">ООО <q>Бабуленькины котятки</q>, 2021</div>
+    <div class="company-address">Наш адрес: улица Котовая, д.5</div>
+  </div>
+</footer>
+</body>
+</html>

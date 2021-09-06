@@ -1,0 +1,258 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f5f5f5;
+  font-family: 'Jost', sans-serif;
+}
+
+main > div {
+  margin: 0 0 0 8px;
+}
+
+.types ul {
+  padding: 0;
+  margin: 0;
+}
+
+label {
+  display: block;
+  white-space: nowrap;
+  border-bottom: 1px solid grey;
+  padding: 0;
+  line-height: 40px;
+  text-align: center;
+  background-color: gainsboro;
+  width: 100%;
+  height: 40px;
+}
+
+.break {
+  background-color: gainsboro;
+  height: 100%;
+}
+
+.label-abys {
+  top: 152px;
+}
+
+.label-brit {
+  top: 193px;
+}
+
+.label-rusblue {
+  top: 234px;
+}
+
+.label-siam {
+  top: 275px;
+}
+
+label:hover {
+  background-color: #bebebe;
+}
+
+label:checked ~ label{
+  background-color: gainsboro;
+  color: black;
+}
+
+#select-all:checked ~ .types .label-all,
+#select-abys:checked ~ .types .label-abys,
+#select-siam:checked ~ .types .label-siam,
+#select-rusblue:checked ~ .types .label-rusblue,
+#select-brit:checked ~ .types .label-brit {
+  background-color: #646464;
+  color: white;
+}
+
+#select-abys:checked ~ .cards .card,
+#select-brit:checked ~ .cards .card,
+#select-rusblue:checked ~ .cards .card,
+#select-siam:checked ~ .cards .card {
+  opacity: 0.4;
+}
+
+#select-abys:checked ~ .cards .abys,
+#select-brit:checked ~.cards .brit,
+#select-rusblue:checked ~ .cards .rusblue,
+#select-siam:checked ~ .cards .siam {
+  opacity: 1;
+}
+
+
+input {
+  display: none;
+}
+
+main {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: start;
+  max-width: 1200px;
+  margin: 0 auto 20px auto;
+  min-height: calc(100vh - 170px);
+}
+
+.types {
+  width: 80%;
+  display: flex;
+  flex-wrap: wrap;
+  background-color: gainsboro;
+  align-items: start;
+  align-self: stretch;
+}
+
+header {
+  text-align: center;
+  font-family: 'Prosto One', cursive;
+  font-size: 2em;
+  padding: 36px 0;
+}
+
+.company {
+  position: relative;
+  padding: 30px;
+  border-top: 1px solid grey;
+  display: flex;
+  justify-content: space-between;
+}
+
+.company div {
+}
+
+.company-address {
+}
+
+.company-name {
+
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card:nth-child(4n-2) {
+  width: 65.23%;
+}
+
+.card:nth-child(n+3) {
+  margin-top: 0.6%;
+}
+
+.card:nth-child(4n-2) .desc {
+  padding: 2.5%;
+}
+
+.card:nth-child(8n) {
+  width: 100%;
+}
+
+.card:nth-child(8n) .desc {
+  padding: 1.7%;
+}
+
+.card {
+  margin: 0 0.6% 0.6% 0.6%;
+  background-color: white;
+  width: 32%;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.card .desc {
+  display: none;
+  position: absolute;
+  line-height: 1.5;
+  font-size: 1.3em;
+  color: white;
+  background-color: rgba(88, 88, 88, 0.7);
+  padding: 5%;
+  top: 70%;
+  left: 0;
+  z-index: 3;
+}
+
+.card img {
+  width: 100%;
+}
+
+.card:hover .desc {
+  display: block;
+}
+
+.ratings {
+  width: 80%;
+  background-color: gainsboro;
+  padding: 1%;
+  margin-right: 1%;
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#descend {
+  display: block;
+}
+
+.ratings div {
+  margin-bottom: 10px;
+  display: block;
+  width: 100%;
+}
+
+.ratings h2 {
+  color: darkred;
+  margin-bottom: 6px;
+  width: 100%;
+  margin-top: 0;
+}
+
+.scale {
+  display: inline-block;
+  height: 16px;
+}
+
+.scale-abys {
+  width: 72%;
+  background: linear-gradient(90deg, #00f800, white);
+}
+
+.scale-brit {
+  width: 64%;
+  order: 0;
+  background: linear-gradient(90deg, #eaea00, white);
+}
+
+.scale-rusblue {
+  width: 80%;
+  background: linear-gradient(90deg, #00f800, white);
+}
+
+.scale-siam {
+  width: 32%;
+  background: linear-gradient(90deg, #f30000, white);
+}
+
+.score {
+  position: absolute;
+  right: 10px;
+}
+
+#descend:checked ~ .rating-rusblue {
+  order: 1;
+}
+
+#descend:checked ~ .rating-abys {
+  order: 2;
+}
+
+#descend:checked ~ .rating-brit {
+  order: 3;
+}
+
+#descend:checked ~ .rating-siam {
+  order: 4;
+}
+
