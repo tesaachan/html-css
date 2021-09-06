@@ -1,0 +1,22 @@
+body {
+  height: 2000px;
+}
+
+.box {
+  border: 1px solid #00c300;
+  width: 150px;
+  padding: 10px 10px 20px 10px;
+  position: fixed;
+  top: 25px;
+  right: 25px;
+  background-color: white;
+}
+
+.access {
+  background-color: #00c300;
+  color: white;
+  border: 0;
+  position: absolute;
+  bottom: -5px;
+  right: -5px;
+}
