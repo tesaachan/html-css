@@ -1,0 +1,191 @@
+body {
+  height: 1000px;
+}
+
+/*header*/
+
+header {
+  background: linear-gradient(90deg, #c1f8ff, whitesmoke);
+  border-radius: 8px;
+  width: 100%;
+  height: auto;
+  box-shadow: 0 0 4px gray;
+  position: relative;
+  top: 0;
+  z-index: 4;
+}
+
+h1 {
+  display: inline-block;
+  line-height: 26px;
+  margin: 10px 0 10px 10px;
+
+  font-size: 1.6em;
+  -webkit-background-clip: text;
+
+  color: black;
+  text-shadow: 1px 1px 0 white,
+  -1px 1px 0 white,
+  1px -1px 0 white,
+  -1px -1px 0 white,
+  2px 2px 0 gray;
+}
+
+.title_algo {
+  color: #514e4e;
+}
+
+.heading::after {
+  content: "";
+  background-color: #727272;
+  margin: 0 10px;
+  height: 20px;
+  top: 2px;
+  position: relative;
+  width: 1px;
+  display: inline-block;
+}
+
+/*main*/
+
+main {
+  background-color: ghostwhite;
+  padding: 80px 0;
+  width: 80%;
+  margin: 0 auto;
+  box-sizing: border-box;
+  border-left: 1px solid gainsboro;
+  border-right: 1px solid gainsboro;
+  height: 1000px;
+
+  overflow: hidden;
+}
+
+input {
+  position: absolute;
+  left: 50%;
+  top: 57%;
+  width: 15px;
+  height: 15px;
+  margin: 0;
+  transform: translate(-25px, 0);
+}
+
+#second_page {
+  margin-left: 25px;
+}
+
+#third_page {
+  margin-left: 50px;
+}
+
+
+.slider {
+  margin: 40px;
+  white-space: nowrap;
+  position: relative;
+  z-index: 11;
+  transition: all .5s;
+}
+
+.box {
+  width: 25%;
+  height: 25%;
+  display: inline-block;
+  padding: 10px;
+  box-sizing: border-box;
+  border-radius: 8px;
+  vertical-align: top;
+}
+
+.box > a {
+  text-decoration: none;
+  color: black;
+  display: block;
+  height: 100%;
+  position: relative;
+  z-index: 3;
+}
+
+.box .img-small {
+  height: 0;
+  padding-top: 67.5%;
+  position: relative;
+}
+
+.box > a img {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 95%;
+  max-height: 95%;
+  vertical-align: middle;
+  z-index: 1;
+}
+
+.box > a p {
+  display: none;
+  width: 100%;
+  white-space: normal;
+}
+
+.box:hover {
+  box-shadow: 0 0 6px grey;
+  background-color: whitesmoke;
+}
+
+.box:hover > a p {
+  display: block;
+}
+
+/*full-pic*/
+
+.full {
+  display: none;
+}
+
+.full:target {
+  display: block;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  background-color: rgba(48, 48, 48, 0.7);
+  z-index: 15;
+}
+
+.full .content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 30%;
+}
+
+.full .close-full {
+  position: absolute;
+  top: 2%;
+  right: 1%;
+  color: white;
+  text-decoration: none;
+  font-size: 2em;
+}
+
+/*slider*/
+
+#first_page:checked ~ .slider {
+  left: 0;
+  right: 0;
+}
+
+#second_page:checked ~ .slider {
+  left: -72%;
+  right: 72%;
+}
+
+#third_page:checked ~ .slider {
+  left: -143%;
+  right: 143%;
+}
